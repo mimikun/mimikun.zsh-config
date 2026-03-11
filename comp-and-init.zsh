@@ -222,6 +222,11 @@ if command -v doggo >/dev/null 2>&1; then
     eval "$(doggo completions zsh)"
 fi
 
+# pikpaktui
+if command -v pikpaktui >/dev/null 2>&1; then
+    eval "$(pikpaktui completions zsh)"
+fi
+
 # TODO: Use plugin manager
 # cute
 # e.g. https://github.com/mattmc3/antidote
