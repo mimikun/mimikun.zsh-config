@@ -227,6 +227,36 @@ if command -v pikpaktui >/dev/null 2>&1; then
     eval "$(pikpaktui completions zsh)"
 fi
 
+# autohand
+if command -v autohand >/dev/null 2>&1; then
+    eval "$(autohand completion zsh)"
+fi
+
+# goose
+if command -v goose >/dev/null 2>&1; then
+    eval "$(goose completion zsh)"
+fi
+
+# kiro-cli
+if command -v kiro-cli >/dev/null 2>&1; then
+    eval "$(kiro-cli completion zsh)"
+fi
+
+# acli
+if command -v acli >/dev/null 2>&1; then
+    eval "$(acli completion zsh)"
+fi
+
+# codex
+if command -v codex >/dev/null 2>&1; then
+    eval "$(codex completion zsh)"
+fi
+
+# agent
+if command -v agent >/dev/null 2>&1; then
+    eval "$(agent shell-integration zsh)"
+fi
+
 # TODO: Use plugin manager
 # cute
 # e.g. https://github.com/mattmc3/antidote
@@ -240,4 +270,3 @@ source "$CUTE_DIR/cute"
 
 
 #[ ! -f "$HOME/.x-cmd.root/X" ] || . "$HOME/.x-cmd.root/X" # boot up x-cmd.
-
