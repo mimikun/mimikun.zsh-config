@@ -187,4 +187,7 @@ export PATH="$DEPOT_INSTALL_DIR:$PATH"
 # cache dir
 export ZSH_CACHE_DIR="$XDG_CACHE_HOME/zsh"
 
+#kubectl krew
+export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
+
 # vim:ft=zsh
