@@ -257,6 +257,11 @@ if command -v agent >/dev/null 2>&1; then
     eval "$(agent shell-integration zsh)"
 fi
 
+# taws
+if command -v taws >/dev/null 2>&1; then
+    eval "$(taws completion zsh)"
+fi
+
 # TODO: Use plugin manager
 # cute
 # e.g. https://github.com/mattmc3/antidote
