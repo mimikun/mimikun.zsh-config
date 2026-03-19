@@ -262,6 +262,11 @@ if command -v taws >/dev/null 2>&1; then
     eval "$(taws completion zsh)"
 fi
 
+# pgit
+if command -v pgit >/dev/null 2>&1; then
+    eval "$(pgit completion zsh)"
+fi
+
 # TODO: Use plugin manager
 # cute
 # e.g. https://github.com/mattmc3/antidote
