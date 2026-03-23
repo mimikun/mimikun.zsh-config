@@ -190,4 +190,7 @@ export ZSH_CACHE_DIR="$XDG_CACHE_HOME/zsh"
 #kubectl krew
 export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
 
+# Browser-Use
+export PATH="$HOME/.browser-use-env/bin:$HOME/.local/bin:$PATH"
+
 # vim:ft=zsh
