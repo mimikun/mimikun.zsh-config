@@ -267,6 +267,12 @@ if command -v pgit >/dev/null 2>&1; then
     eval "$(pgit completion zsh)"
 fi
 
+# jsongrep
+# NOTE: or run it: jg generate shell zsh > ~/.zsh/completions/_jg
+if command -v jg >/dev/null 2>&1; then
+    eval "$(jg generate shell zsh)"
+fi
+
 # TODO: Use plugin manager
 # cute
 # e.g. https://github.com/mattmc3/antidote
