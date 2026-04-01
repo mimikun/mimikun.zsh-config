@@ -273,6 +273,11 @@ if command -v jg >/dev/null 2>&1; then
     eval "$(jg generate shell zsh)"
 fi
 
+# hyprmoncfg 
+if command -v hyprmoncfg >/dev/null 2>&1; then
+    eval "$(hyprmoncfg completion zsh)"
+fi
+
 # TODO: Use plugin manager
 # cute
 # e.g. https://github.com/mattmc3/antidote
