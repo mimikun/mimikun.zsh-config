@@ -283,6 +283,12 @@ if command -v purple >/dev/null 2>&1; then
     eval "$(purple --completions zsh)"
 fi
 
+# deadbranch
+# NOTE: or run it: deadbranch completions zsh > ~/.zfunc/_deadbranch
+if command -v deadbranch >/dev/null 2>&1; then
+    eval "$(deadbranch completions zsh)"
+fi
+
 # TODO: Use plugin manager
 # cute
 # e.g. https://github.com/mattmc3/antidote
