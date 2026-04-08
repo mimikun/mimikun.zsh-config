@@ -278,6 +278,11 @@ if command -v hyprmoncfg >/dev/null 2>&1; then
     eval "$(hyprmoncfg completion zsh)"
 fi
 
+# purple
+if command -v purple >/dev/null 2>&1; then
+    eval "$(purple --completions zsh)"
+fi
+
 # TODO: Use plugin manager
 # cute
 # e.g. https://github.com/mattmc3/antidote
