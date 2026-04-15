@@ -289,6 +289,16 @@ if command -v deadbranch >/dev/null 2>&1; then
     eval "$(deadbranch completions zsh)"
 fi
 
+# sharedserver
+if command -v sharedserver >/dev/null 2>&1; then
+    eval "$(sharedserver completion zsh)"
+fi
+
+# unifly
+if command -v unifly >/dev/null 2>&1; then
+    eval "$(unifly completions zsh)"
+fi
+
 # TODO: Use plugin manager
 # cute
 # e.g. https://github.com/mattmc3/antidote
