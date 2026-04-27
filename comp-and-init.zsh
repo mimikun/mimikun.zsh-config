@@ -299,6 +299,27 @@ if command -v unifly >/dev/null 2>&1; then
     eval "$(unifly completions zsh)"
 fi
 
+# tombi
+if command -v tombi >/dev/null 2>&1; then
+    eval "$(tombi completion zsh)"
+fi
+
+# fnox
+if command -v fnox >/dev/null 2>&1; then
+    eval "$(fnox activate zsh)"
+    eval "$(fnox completion zsh)"
+fi
+
+# hk
+if command -v hk >/dev/null 2>&1; then
+    eval "$(hk completion zsh)"
+fi
+
+# pitchfork
+if command -v pitchfork >/dev/null 2>&1; then
+    eval "$(pitchfork completion zsh)"
+fi
+
 # TODO: Use plugin manager
 # cute
 # e.g. https://github.com/mattmc3/antidote
