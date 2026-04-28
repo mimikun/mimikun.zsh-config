@@ -317,7 +317,19 @@ fi
 
 # pitchfork
 if command -v pitchfork >/dev/null 2>&1; then
+    eval "$(pitchfork activate zsh)"
     eval "$(pitchfork completion zsh)"
+fi
+
+# usage
+if command -v usage >/dev/null 2>&1; then
+    eval "$(usage --completions zsh)"
+fi
+
+# aube
+if command -v aube >/dev/null 2>&1; then
+    #aube completion zsh > "${fpath[1]}/_aube"
+    eval "$(aube completion zsh)"
 fi
 
 # TODO: Use plugin manager
@@ -331,5 +343,5 @@ if [ ! -d "$CUTE_DIR" ]; then
 fi
 source "$CUTE_DIR/cute"
 
-
 #[ ! -f "$HOME/.x-cmd.root/X" ] || . "$HOME/.x-cmd.root/X" # boot up x-cmd.
+
