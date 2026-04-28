@@ -332,6 +332,11 @@ if command -v aube >/dev/null 2>&1; then
     eval "$(aube completion zsh)"
 fi
 
+# pkl
+if command -v pkl >/dev/null 2>&1; then
+    eval "$(pkl shell-completion zsh)"
+fi
+
 # TODO: Use plugin manager
 # cute
 # e.g. https://github.com/mattmc3/antidote
