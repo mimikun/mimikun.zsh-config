@@ -337,6 +337,12 @@ if command -v pkl >/dev/null 2>&1; then
     eval "$(pkl shell-completion zsh)"
 fi
 
+# rvpm
+if command -v rvpm >/dev/null 2>&1; then
+    #rvpm completion zsh > ~/.zfunc/_rvpm
+    eval "$(rvpm completion zsh)"
+fi
+
 # TODO: Use plugin manager
 # cute
 # e.g. https://github.com/mattmc3/antidote
