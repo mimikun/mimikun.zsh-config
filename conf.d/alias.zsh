@@ -18,5 +18,6 @@ alias pip="python3 -m pip"
 
 alias vim=nvim
 
+alias sem="$HOME/.cargo/bin/sem"
 
 # vim:ft=zsh

@@ -343,6 +343,11 @@ if command -v rvpm >/dev/null 2>&1; then
     eval "$(rvpm completion zsh)"
 fi
 
+# kyushu
+if [ -f "$HOME/.kyu/bin/env" ]; then
+    source "$HOME/.kyu/bin/env"
+fi
+
 # TODO: Use plugin manager
 # cute
 # e.g. https://github.com/mattmc3/antidote
