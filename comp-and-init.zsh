@@ -348,6 +348,12 @@ if [ -f "$HOME/.kyu/bin/env" ]; then
     source "$HOME/.kyu/bin/env"
 fi
 
+# ttl
+if command -v ttl >/dev/null 2>&1; then
+    #ttl --completions zsh > ~/.zfunc/_ttl
+    eval "$(ttl --completions zsh)"
+fi
+
 # TODO: Use plugin manager
 # cute
 # e.g. https://github.com/mattmc3/antidote
