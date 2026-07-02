@@ -205,4 +205,7 @@ export PATH="$HOME/.browser-use-env/bin:$HOME/.local/bin:$PATH"
 # Added by git-ai installer on Fri May 29 03:18:44 PM JST 2026
 export PATH="$HOME/.git-ai/bin:$PATH"
 
+# simutil
+export PATH="$HOME/.local/lib/simutil:$PATH"
+
 # vim:ft=zsh
