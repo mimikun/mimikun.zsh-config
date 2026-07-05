@@ -354,6 +354,12 @@ if command -v ttl >/dev/null 2>&1; then
     eval "$(ttl --completions zsh)"
 fi
 
+# herdr
+if command -v herdr >/dev/null 2>&1; then
+    #herdr completion zsh > ~/.zfunc/_herdr
+    eval "$(herdr completion zsh)"
+fi
+
 # TODO: Use plugin manager
 # cute
 # e.g. https://github.com/mattmc3/antidote
